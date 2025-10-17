@@ -1,17 +1,11 @@
-# 🎲 Dice Roller Plugins
+# 🎲 Dice Roller 3D
 
-Animation and effect plugins for [@dice-roller](https://github.com/rakmaster/dice-roller).
-
-## Packages
-
-- **[@dice-roller/3d-plugin](packages/3d-plugin)** - Three.js 3D dice with physics simulation
-- **[@dice-roller/sprite-plugin](packages/sprite-plugin)** - 2D sprite animations (coming soon)
-- **[@dice-roller/sound-plugin](packages/sound-plugin)** - Sound effects (coming soon)
+Three.js 3D dice animation plugin for [@dice-roller](https://github.com/rakmaster/dice-roller).
 
 ## Installation
 
 ```bash
-npm install @dice-roller/3d-plugin
+npm install @dice-roller/3d
 ```
 
 ## Usage
@@ -19,7 +13,7 @@ npm install @dice-roller/3d-plugin
 ```vue
 <script setup>
 import { VDiceRoller } from '@dice-roller/vue';
-import { DiceRoller3DPlugin } from '@dice-roller/3d-plugin';
+import { DiceRoller3DPlugin } from '@dice-roller/3d';
 
 const plugin3D = new DiceRoller3DPlugin({
   theme: 'fantasy',
@@ -38,18 +32,23 @@ const plugin3D = new DiceRoller3DPlugin({
 
 ## Features
 
-### 3D Plugin
-- ✨ Realistic 3D dice models
-- 🎮 Physics-based rolling simulation
-- 🎨 Multiple themes (fantasy, modern, neon, etc.)
-- 🎯 Support for all dice types (d4, d6, d8, d10, d12, d20, d100)
-- ⚡ Optimized performance
-- 📱 Mobile-friendly
+- ✨ **Realistic 3D dice** - Proper geometry for d4, d6, d8, d10, d12, d20
+- 🎮 **Physics simulation** - Powered by Cannon.js
+- 🎨 **Multiple themes** - Fantasy, modern, neon, and more
+- ⚡ **Optimized** - Efficient rendering and cleanup
+- 📱 **Mobile-friendly** - Works on all devices
+
+## Themes
+
+- **default** - Clean blue dice with standard lighting
+- **fantasy** - Purple mystical dice with magical atmosphere
+- **modern** - Green minimalist dice with clean aesthetics
+- **neon** - Red glowing dice with cyberpunk vibes
 
 ## Documentation
 
 - [Main Dice Roller Docs](https://rakmaster.github.io/dice-roller/)
-- [Plugin API Reference](https://rakmaster.github.io/dice-roller/plugins.html)
+- [Plugin Interface](https://rakmaster.github.io/dice-roller/#animation-plugins)
 
 ## License
 
